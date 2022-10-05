@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myWeblog.com</title>
+     <link rel="stylesheet" href="mic.css">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 style="font-size: 60px"><span style="font-family:'Courier New'" >&nbsp;My <span style="color:white">Weblog</span></span></h1>
+        </header>
+
+        <div id="main">
+
+        <div id="sidebar">
+            <form action="">
+                <input type="text" placeholder="Search...">
+                <button type="submit">search</button>
+              </form>
+
+
+        
+        </div>
+
+
+        <div id="sidebar2">
+        <div class="mm">
+            <h1 style="font-size: 12px" class="icon"><img src="https://img.icons8.com/bubbles/50/000000/man-in-blue-jacket-information.png"/>
+            This student is Responsible</h1>
+            <p>&nbsp;Things this student loves:</p>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Read</h1>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Sleep</h1>
+            <h1 style="font-size: 14px">&nbsp;&nbsp;Browsing Facebook</h1>
+            
+          
+            <form>
+              <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+              <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+              <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+              <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+              <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+            </form>
+        </div>
+    </div>
+        <div id="column1">
+            <h1 style="font-family:'Courier New'"> &nbsp;&nbsp;Post</h1>
+            <a onclick="resizeImage()" href="#" >&nbsp;&nbsp;<img src="img/id uniform.jpg" id="img1" width="200px"/><br/></a>
+            <h2></h2>
+            <script src="mic.js"></script>
+            <h3> &nbsp;&nbsp;&nbsp;Michael D. Valdrez</h3>
+            <h4>&nbsp;&nbsp;BSIT-3101</h4>
+            <h5>&nbsp;&nbsp;Poblacion Mabini Batangas</h5>
+            <a onclick="remove()" href="#"> &nbsp;&nbsp;Show more...</a>
+
+            <script>
+                function remove(){
+                    document.querySelector('.mm').remove();
+                }
+        
+            </script>
+        </div>
+        </div>
+
+        <footer>
+            <h1 style="font-size: 15px"> &nbsp;&nbsp;&nbsp;&nbsp;"Engaging all students in partnership with family and community to become informed
+                , <span style="color: rgb(155, 135, 135) ;">compassionate, global citizens."</span></h1>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>
